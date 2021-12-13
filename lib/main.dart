@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:misiontic_template/ui/app.dart';
+import 'package:flutter_geo/ui/app.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

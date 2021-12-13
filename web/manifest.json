@@ -1,6 +1,6 @@
 {
-    "name": "misiontic_template",
-    "short_name": "misiontic_template",
+    "name": "flutter_geo",
+    "short_name": "flutter_geo",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

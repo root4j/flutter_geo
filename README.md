@@ -1,4 +1,4 @@
-# misiontic_template
+# Flutter Geo Demo
 
 A new Flutter project.
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_geo/domain/use_case/controllers/theme_controller.dart';
+import 'package:flutter_geo/ui/pages/stateful/screens/gps_screen.dart';
+import 'package:flutter_geo/ui/widgets/appbar.dart';
 import 'package:get/get.dart';
-import 'package:misiontic_template/domain/use_case/controllers/theme_controller.dart';
-import 'package:misiontic_template/ui/pages/stateful/screens/gps_screen.dart';
-import 'package:misiontic_template/ui/widgets/appbar.dart';
 
 class GpsPage extends StatelessWidget {
   final ThemeController controller = Get.find();

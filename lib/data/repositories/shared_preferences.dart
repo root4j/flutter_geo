@@ -1,4 +1,4 @@
-import 'package:misiontic_template/domain/repositories/shared_preferences_interface.dart';
+import 'package:flutter_geo/domain/repositories/shared_preferences_interface.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LocalPreferences implements SharedPreferencesInterface {

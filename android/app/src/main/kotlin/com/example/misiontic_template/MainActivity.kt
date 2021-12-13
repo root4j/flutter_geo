@@ -1,4 +1,4 @@
-package com.example.misiontic_template
+package com.example.flutter_geo
 
 import io.flutter.embedding.android.FlutterActivity
 

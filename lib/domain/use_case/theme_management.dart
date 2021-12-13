@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_geo/data/repositories/shared_preferences.dart';
 import 'package:get/get.dart';
-import 'package:misiontic_template/data/repositories/shared_preferences.dart';
 
 class ThemeManager {
   final _sharedPreferences = LocalPreferences();

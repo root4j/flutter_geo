@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_geo/domain/use_case/controllers/location.dart';
+import 'package:flutter_geo/domain/use_case/controllers/permissions.dart';
+import 'package:flutter_geo/domain/use_case/controllers/theme_controller.dart';
+import 'package:flutter_geo/domain/use_case/permission_management.dart';
+import 'package:flutter_geo/domain/use_case/theme_management.dart';
+import 'package:flutter_geo/ui/pages/stateful/gps_page.dart';
+import 'package:flutter_geo/ui/theme/theme.dart';
 import 'package:get/get.dart';
-import 'package:misiontic_template/domain/use_case/controllers/location.dart';
-import 'package:misiontic_template/domain/use_case/controllers/permissions.dart';
-import 'package:misiontic_template/domain/use_case/controllers/theme_controller.dart';
-import 'package:misiontic_template/domain/use_case/permission_management.dart';
-import 'package:misiontic_template/domain/use_case/theme_management.dart';
-import 'package:misiontic_template/ui/pages/stateful/gps_page.dart';
-import 'package:misiontic_template/ui/theme/theme.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);

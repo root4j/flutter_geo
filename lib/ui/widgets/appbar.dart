@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_geo/domain/use_case/controllers/theme_controller.dart';
 import 'package:get/get.dart';
-import 'package:misiontic_template/domain/use_case/controllers/theme_controller.dart';
 
 class CustomAppBar extends AppBar {
   final Widget tile;
