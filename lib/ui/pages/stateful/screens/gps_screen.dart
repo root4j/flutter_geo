@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_geo/domain/use_case/controllers/location.dart';
 import 'package:flutter_geo/domain/use_case/controllers/permissions.dart';
@@ -25,6 +27,18 @@ class _State extends State<GpsScreen> {
     permissionsController = Get.find();
     locationController = Get.find();
     manager = LocationManager();
+    // Sera el encargado de refrescar la ubicacion cada 30 segundos
+    Timer.periodic(const Duration(seconds: 30), (timer) async {
+      // Verifica que tienes los permisos y luego obten la ubicacion
+      // Almacenala y tambien muestra un snackbar con los datos
+      locationController.location.value = null;
+      if (permissionsController.locationGranted) {
+        final position = await manager.getCurrentLocation();
+        locationController.location.value = position;
+        Get.snackbar('Tu ubicación',
+            'Latitud ${position.latitude}\nLongitud: ${position.longitude}\nAltitud: ${position.altitude}');
+      }
+    });
   }
 
   @override
